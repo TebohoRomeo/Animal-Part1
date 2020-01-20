@@ -50,7 +50,7 @@ class Home {
              }
          }
         this.animals.push(name);
-        return `${this.animals} My Animals`;
+        // return `${this.animals} My Animals`;
      }
      
     makeAllSounds(){   
@@ -69,7 +69,9 @@ home.adoptPet(dog1);
 home.makeAllSounds();
 
 home.adoptPet(dog2);
+// home.adoptPet(dog2);
+
 home.makeAllSounds();
 
 
-module.exports = Animal;
+module.exports = Animal, Dog, Cat, Home;
