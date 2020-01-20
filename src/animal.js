@@ -50,7 +50,7 @@ class Home {
              }
          }
         this.animals.push(name);
-        return `${this.animals} My Animals`;
+        return this.animals;
      }
      
     makeAllSounds(){   
