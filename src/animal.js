@@ -72,4 +72,4 @@ home.adoptPet(dog2);
 home.makeAllSounds();
 
 
-module.exports = Animal;
+module.exports = Animal, Dog, Cat, Home;
