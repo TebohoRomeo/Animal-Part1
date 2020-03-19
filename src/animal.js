@@ -23,10 +23,6 @@ class Dog extends Animal {
     }
 }
 
-let dog = new Dog("Rax");
-console.log(dog.eat());
-console.log(dog.sound());
-
 class Cat extends Animal {
     
     sound() {
@@ -34,13 +30,9 @@ class Cat extends Animal {
     }
 }
 
-let cat = new Cat("Stormy");
-console.log(cat.eat());
-console.log(cat.sound());
-
 class Home {
-    constructor(name){
-        this.name = name;
+    constructor(){
+        // this.name = name;
         this.animals = [];
     }
      adoptPet(name){
@@ -50,7 +42,7 @@ class Home {
              }
          }
         this.animals.push(name);
-        // return `${this.animals} My Animals`;
+         console.log(this.animals);
      }
      
     makeAllSounds(){   
@@ -61,17 +53,5 @@ class Home {
 
  }
 
-let home  = new Home();
-let dog1 = new Dog();
-let dog2 = new Dog();
 
-home.adoptPet(dog1);
-home.makeAllSounds();
-
-home.adoptPet(dog2);
-// home.adoptPet(dog2);
-
-home.makeAllSounds();
-
-
-module.exports = Animal, Dog, Cat, Home;
+module.exports = {Animal, Dog, Cat, Home};
