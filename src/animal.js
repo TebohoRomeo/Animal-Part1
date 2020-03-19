@@ -42,7 +42,11 @@ class Home {
              }
          }
         this.animals.push(name);
+<<<<<<< HEAD
          console.log(this.animals);
+=======
+        return this.animals;
+>>>>>>> 5a7431136a4acb9fd71e946c053703d791e4c584
      }
      
     makeAllSounds(){   
@@ -54,4 +58,8 @@ class Home {
  }
 
 
+<<<<<<< HEAD
 module.exports = {Animal, Dog, Cat, Home};
+=======
+module.exports = Animal, Dog, Cat, Home;
+>>>>>>> 5a7431136a4acb9fd71e946c053703d791e4c584
