@@ -17,7 +17,6 @@ describe("Animal class", function(){
 })
 
 describe("Home class", function(){
-
     let home = new Home();
     it('checks if makeAlSounds() is defined', function() {
        expect(home.makeAllSounds).toBeDefined()
